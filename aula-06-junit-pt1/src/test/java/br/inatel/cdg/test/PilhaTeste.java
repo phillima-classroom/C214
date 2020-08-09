@@ -39,9 +39,9 @@ public class PilhaTeste {
 	}
 	
 	@Test(expected = EmptyStackException.class)
-	public void testePilhaPopVazio() {
+	public void testePilhaPopException() {
 		Pilha<Integer> pilhaInteiros = new Pilha<Integer>();
-		pilhaInteiros.pop();
+		int x = pilhaInteiros.pop();
 	}
 	
 	@Test

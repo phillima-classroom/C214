@@ -9,6 +9,8 @@ import br.inatel.cdg.Resultado;
 
 public class VarredorMapaTest {
 
+	//Em um codigo real esse teste nao deveria existir
+	//apenas o sincrono. Deixei aqui apenas para fins de demonstracao
 	@Test
 	public void testVarreAsync() {
 		
@@ -17,7 +19,9 @@ public class VarredorMapaTest {
 		
 		f.varreAsync(res);
 		try {
-			Thread.sleep(66);//Esse valor precisa ser calibrado
+			//Esse valor precisa ser calibrado
+			//de forma que você veja o mesmo teste falhando/passando
+			Thread.sleep(66);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}

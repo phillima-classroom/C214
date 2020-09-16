@@ -22,5 +22,4 @@ public class CarrinhoCompra {
 		}
 		return total;
 	}
-
 }

@@ -1,4 +1,4 @@
-package br.inatel.cdg.aula_08.notifiers;
+package br.inatel.cdg.aula_08.achievement;
 
 public class SemRecebedoresException extends RuntimeException {
 

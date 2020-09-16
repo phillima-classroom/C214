@@ -3,7 +3,7 @@ package br.inatel.cdg.aula_08.notifiers;
 import java.util.ArrayList;
 import java.util.List;
 
-public class AchivmentMessages {
+public class AchievmentMessages {
 
 	private List<RecebedorMSG> receiver = new ArrayList<RecebedorMSG>();
 	

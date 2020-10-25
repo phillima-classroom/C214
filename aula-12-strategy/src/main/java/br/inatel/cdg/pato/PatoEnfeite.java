@@ -1,7 +1,7 @@
 package br.inatel.cdg.pato;
 
-import br.inatel.cdg.pato.comportamento.impl.Mudo;
-import br.inatel.cdg.pato.comportamento.impl.NaoPodeVoar;
+import br.inatel.cdg.pato.comportamento.quack.impl.Mudo;
+import br.inatel.cdg.pato.comportamento.voar.impl.NaoPodeVoar;
 
 public class PatoEnfeite extends Pato {
 

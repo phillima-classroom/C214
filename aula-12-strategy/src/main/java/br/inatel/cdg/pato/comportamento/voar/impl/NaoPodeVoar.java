@@ -1,4 +1,4 @@
-package br.inatel.cdg.pato.comportamento.impl;
+package br.inatel.cdg.pato.comportamento.voar.impl;
 
 import br.inatel.cdg.pato.comportamento.Voar;
 

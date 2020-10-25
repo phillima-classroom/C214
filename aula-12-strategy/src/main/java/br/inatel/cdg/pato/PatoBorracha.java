@@ -1,8 +1,7 @@
 package br.inatel.cdg.pato;
 
-import br.inatel.cdg.pato.comportamento.impl.NaoPodeVoar;
-import br.inatel.cdg.pato.comportamento.impl.QuackPadrao;
-import br.inatel.cdg.pato.comportamento.impl.Squeak;
+import br.inatel.cdg.pato.comportamento.quack.impl.Squeak;
+import br.inatel.cdg.pato.comportamento.voar.impl.NaoPodeVoar;
 
 public class PatoBorracha extends Pato {
 

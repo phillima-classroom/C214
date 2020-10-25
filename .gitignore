@@ -59,3 +59,6 @@ buildNumber.properties
 
 #mac
 *.DS_Store
+
+#Intellij
+.idea*

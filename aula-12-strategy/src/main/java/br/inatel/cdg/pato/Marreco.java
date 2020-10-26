@@ -13,7 +13,6 @@ public class Marreco extends Pato {
 	@Override
 	public void mostrar() {
 		System.out.println("Eu sou um Marreco!");
-
 	}
 
 }

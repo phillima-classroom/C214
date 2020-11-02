@@ -48,5 +48,18 @@ public class TesteBebidas {
 		
 	}
 	
+	@Test
+	public void testeEspressoComCanelaDescricao() {
+		
+		Bebida espresso = new Espresso();
+		
+		espresso = new Canela(espresso);
+		
+		String descricao  = espresso.getDescricao();
+		
+		assertEquals("Espresso, Canela", descricao);
+	
+	}
+	
 	
 }

@@ -6,8 +6,8 @@ import org.junit.Test;
 
 import br.inatel.cdg.cafeteria.bebidas.Bebida;
 import br.inatel.cdg.cafeteria.bebidas.Espresso;
-import br.inatel.cdg.cafeteria.condimentos.Canela;
-import br.inatel.cdg.cafeteria.condimentos.Pacoca;
+import br.inatel.cdg.cafeteria.bebidas.condimentos.Canela;
+import br.inatel.cdg.cafeteria.bebidas.condimentos.Pacoca;
 
 public class TesteBebidas {
 

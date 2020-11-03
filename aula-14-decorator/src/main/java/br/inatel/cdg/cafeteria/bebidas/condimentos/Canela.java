@@ -1,4 +1,4 @@
-package br.inatel.cdg.cafeteria.condimentos;
+package br.inatel.cdg.cafeteria.bebidas.condimentos;
 
 import br.inatel.cdg.cafeteria.bebidas.Bebida;
 

@@ -1,4 +1,4 @@
-package br.inatel.cdg;
+package br.inatel.cdg.cafeteria.teste;
 
 import static org.junit.Assert.assertEquals;
 

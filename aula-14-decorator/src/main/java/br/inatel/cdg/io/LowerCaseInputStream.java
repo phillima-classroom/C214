@@ -17,6 +17,7 @@ public class LowerCaseInputStream extends FilterInputStream {
 			return c;
 		else
 			return Character.toLowerCase(c);
+		
 	}
 
 }

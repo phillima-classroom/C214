@@ -22,15 +22,13 @@ public class TesteLowerCaseInputStream {
 	
 	private String msgExpected = "quero jogar cthulu death may die";
 	private String msgOriginal = "Quero jogar Cthulu Death May Die";
-	private InputStream in = null;
-	private PrintStream pStream;
 	private String nomeArquivo = "teste.txt";
 	
 	@Before
 	public void init() {
 		
 		try{
-			pStream = new PrintStream(nomeArquivo);
+			PrintStream pStream = new PrintStream(nomeArquivo);
 			pStream.print(msgOriginal);
 			pStream.close();
 			
@@ -55,7 +53,7 @@ public class TesteLowerCaseInputStream {
 		StringBuilder msgLida = new StringBuilder();
 		int c;
 		try {
-			in = new LowerCaseInputStream(new FileInputStream(nomeArquivo));
+			InputStream in = new LowerCaseInputStream(new FileInputStream(nomeArquivo));
 			while((c = in.read()) >= 0) {
 				msgLida.append((char)c);
 			}

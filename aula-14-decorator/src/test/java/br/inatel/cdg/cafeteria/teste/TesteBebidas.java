@@ -5,8 +5,10 @@ import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 
 import br.inatel.cdg.cafeteria.bebidas.Bebida;
+import br.inatel.cdg.cafeteria.bebidas.Cappuccino;
 import br.inatel.cdg.cafeteria.bebidas.Espresso;
 import br.inatel.cdg.cafeteria.bebidas.condimentos.Canela;
+import br.inatel.cdg.cafeteria.bebidas.condimentos.Chantilly;
 import br.inatel.cdg.cafeteria.bebidas.condimentos.Pacoca;
 
 public class TesteBebidas {
@@ -59,6 +61,18 @@ public class TesteBebidas {
 		
 		assertEquals("Espresso, Canela", descricao);
 	
+	}
+	
+	@Test
+	public void testeCappuccinoComCanelaPacocaChantilly() {
+		
+		Bebida cappuccino = new Cappuccino();
+		cappuccino = new Canela(cappuccino);
+		cappuccino = new Pacoca(cappuccino);
+		cappuccino = new Chantilly(cappuccino);
+		double preco = cappuccino.preco();
+		assertEquals(9.55, preco,0.01);
+		
 	}
 	
 	

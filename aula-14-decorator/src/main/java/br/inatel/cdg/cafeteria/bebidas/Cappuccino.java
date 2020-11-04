@@ -3,12 +3,12 @@ package br.inatel.cdg.cafeteria.bebidas;
 public class Cappuccino extends Bebida {
 
 	public Cappuccino() {
-		descricao = "Java Honey";
+		descricao = "Cappuccino";
 	}
 	
 	@Override
 	public double preco() {
-		return 5.99;
+		return 6.00;
 	}
 
 }

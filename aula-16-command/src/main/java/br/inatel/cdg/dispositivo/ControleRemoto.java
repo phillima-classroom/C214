@@ -2,6 +2,9 @@ package br.inatel.cdg.dispositivo;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Stack;
+
+import javax.crypto.NullCipher;
 
 import br.inatel.cdg.command.ICommand;
 import br.inatel.cdg.command.CommandNull;
@@ -10,17 +13,15 @@ public class ControleRemoto {
 	
 	private List<ICommand> onCommands;
 	private List<ICommand> offCommands;
-	private List<ICommand> desfazerCommands;
-	
-	ICommand slot;
+	private Stack<ICommand> desfazerCommands;
 	
 	public ControleRemoto(int qtdBotoesAcao) {
 		onCommands = new ArrayList<ICommand>();
 		offCommands = new ArrayList<ICommand>();
-		desfazerCommands = new ArrayList<ICommand>();
+		desfazerCommands = new Stack<ICommand>();
 		
 		ICommand nullCommand = new CommandNull();
-		desfazerCommands.add(nullCommand);
+		desfazerCommands.push(nullCommand);
 		for(int i = 0;i < qtdBotoesAcao; i++) {
 			onCommands.add(nullCommand);
 			offCommands.add(nullCommand);
@@ -36,18 +37,19 @@ public class ControleRemoto {
 	
 	public void botaoLigar(int slot) {
 		onCommands.get(slot).executa();
-		desfazerCommands.add(onCommands.get(slot));
+		desfazerCommands.push(onCommands.get(slot));
 	}
 	
 	public void botaoDesligar(int slot) {
 		offCommands.get(slot).executa();
-		desfazerCommands.add(offCommands.get(slot));
+		desfazerCommands.push(offCommands.get(slot));
 	}
 	
 	public void desfazer() {
-		desfazerCommands.get(desfazerCommands.size()-1).desfazer();
-		if(desfazerCommands.size() > 1)
-			desfazerCommands.remove(desfazerCommands.size()-1);
+		
+		desfazerCommands.pop().desfazer();
+		if(desfazerCommands.size() == 0)
+			desfazerCommands.push(new CommandNull());
 	}
 	
 	@Override

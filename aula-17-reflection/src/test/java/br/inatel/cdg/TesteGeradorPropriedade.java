@@ -6,9 +6,9 @@ import java.util.Map;
 
 import org.junit.Test;
 
-import br.inatel.cdg.geradorpropriedade.BoardGame;
 import br.inatel.cdg.geradorpropriedade.GeradorMapa;
-import br.inatel.cdg.geradorpropriedade.Puzzle;
+import br.inatel.cdg.pojo.BoardGame;
+import br.inatel.cdg.pojo.Puzzle;
 
 public class TesteGeradorPropriedade {
 

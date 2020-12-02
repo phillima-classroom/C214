@@ -3,11 +3,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>br.inatel.cdg</groupId>
-    <artifactId>aula-17-reflection</artifactId>
+    <artifactId>aula-18-reflection</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
-    <name>aula-17-reflection</name>
-    <description>Add project description here</description>
+    <name>aula-18-reflection</name>
+    <description>Aula Sobre Reflexao</description>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

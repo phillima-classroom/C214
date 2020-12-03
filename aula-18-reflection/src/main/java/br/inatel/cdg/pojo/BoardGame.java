@@ -1,8 +1,12 @@
 package br.inatel.cdg.pojo;
 
-public class BoardGame {
+import br.inatel.cdg.annotations.BuscaNome;
 
+public class BoardGame {
+	
+	@BuscaNome
 	private String nome;
+	@BuscaNome
 	private int numJogadores;
 	private boolean cooperativo;
 	private String descricao;
@@ -41,5 +45,4 @@ public class BoardGame {
 	public String getNome() {
 		return nome;
 	}
-	
 }

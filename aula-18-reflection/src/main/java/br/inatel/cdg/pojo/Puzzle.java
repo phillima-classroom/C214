@@ -1,8 +1,11 @@
 package br.inatel.cdg.pojo;
 
+import br.inatel.cdg.annotations.BuscaNome;
+
 public class Puzzle {
 
 	private String nome;
+	@BuscaNome
 	private int qtdPecas;
 	private String descricao;
 	

@@ -23,7 +23,7 @@ public abstract class Pato {
 	}
 	
 	public void nadar() {
-		System.out.println("Qualquer pato pode nadar. Se est· boiando j· conta!");
+		System.out.println("Qualquer pato pode nadar. Se est√° boiando j√° conta!");
 	}
 	
 	//Getter e Setter

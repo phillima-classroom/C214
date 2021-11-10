@@ -6,7 +6,7 @@ public class NaoPodeVoar implements Voar {
 
 	@Override
 	public void voar() {
-		System.out.println("Eu n„o posso voar!");
+		System.out.println("Eu n√£o posso voar!");
 	}
 	
 }
